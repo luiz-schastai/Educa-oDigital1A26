@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -7,19 +8,27 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
+    <header>
+        
 <h1>Meu blog tech</h1>
 <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
 </header>
 <main>
-    <img src="Gemini_Generated_Image_.png" alt="Imagem Gerada pelo Gemini">
+    <img src="Gemini_Generated_Image_.png" alt="imagem gerada pelo Gemini">
     <div>
 <h2>Meu primeiro post</h2>
-<p>Por: Luiz henrique Schastai</p>
- <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-</main>
+<p class="artigo-autor">Por: Luiz Henrique Schastai</p>
+<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+<button>🗽<span></span></button>
 </div>
-
+</main>
 </body>
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
 </html>
