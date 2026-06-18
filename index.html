@@ -1,67 +1,82 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-</header>
-<main>
-<article>
-<img src="Gemini_Generated_Image_.png"
-alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi‑Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    </header>
 
-<div>
-<h2>Meu primeiro post</h2>
-<p class="artigo-autor">Por: Marcelo Paludetto</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação
-e curiosidades da área de tecnologia.</p>
-<button>❤️<span>0</span></button>
-<button>👍<span>0</span></button>
-</div>
-</article>
+    <main>
 
-<article>
-<img src="Gemini_Generated_Image_.png"
-alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi‑Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+        <article>
+            <img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
 
-<div>
-<h2>Meu primeiro post</h2>
-<p class="artigo-autor">Por: Marcelo Paludetto</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação
-e curiosidades da área de tecnologia.</p>
-<button>❤️<span>0</span></button>
-<button>👍<span>0</span></button>
-</div>
-</article>
-</main>
+            <div>
+                <h2>Meu primeiro post</h2>
+
+                <p class="artigo-autor">
+                    Por: Luiz Henrique Schastai
+                </p>
+
+                <p>
+                    Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de
+                    programação e curiosidades da área de tecnologia.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
+
+            <div>
+                <h2>Meu segundo post</h2>
+
+                <p class="artigo-autor">
+                    Por: Luiz Henrique Schastai
+                </p>
+
+                <p>
+                    Neste post vou compartilhar mais conteúdos sobre HTML, CSS
+                    e JavaScript para quem está começando na programação.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+
+            botao.addEventListener("click", botaoClicado);
+
+            function botaoClicado() {
+                let texto = botao.querySelector("span");
+
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        });
+    </script>
 </body>
-<script>
-const botoes = document.querySelectorAll("button");
-
-botoes.forEach(function (botao) {
-let curtiu = false;
-
-botao.addEventListener("click", botaoClicado);
-
-function botaoClicado() {
-console.log("fui clicado");
-let texto = botao.querySelector("span");
-
-if (curtiu === false) {
-texto.textContent++;
-curtiu = true;
-} else {
-texto.textContent--;
-curtiu = false;
-}
-}
-</script>
 </html>
