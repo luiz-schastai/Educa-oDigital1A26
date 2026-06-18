@@ -26,8 +26,7 @@ main {
 article {
     display: flex;
     gap: 16px;
-    margin-bottom: 24px;
-
+    padding: 16px;
     border: 1px solid #000643;
 }
 
