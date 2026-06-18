@@ -1,6 +1,6 @@
 header {
-    background-color: #7e7e7e;
-    color: #FFFFFF;
+    background-color: #393939;
+    color: #ffffff;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -13,7 +13,7 @@ header {
 
 main {
     background-color: #fcfff1;
-    color: #000042;
+    color: #000000;
     max-width: 800px;
     margin: 0 auto;
     padding: 16px;
