@@ -27,6 +27,8 @@ article {
     display: flex;
     gap: 16px;
     margin-bottom: 24px;
+
+    border: 1px solid #000643;
 }
 
 main img {
