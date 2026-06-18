@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-    </header>
+ <header>
+<h1>Meu blog tech</h1>
+<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+</header>
 
-    <main>
+<main>
 
-        <article>
-            <img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
+<article>
+<img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
 
-            <div>
-                <h2>Meu primeiro post</h2>
+<div>
+<h2>Meu primeiro post</h2>
 
-                <p class="artigo-autor">
-                    Por: Luiz Henrique Schastai
-                </p>
+<p class="artigo-autor">
+Por: Luiz Henrique Schastai
+</p>
 
-                <p>
-                    Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de
-                    programação e curiosidades da área de tecnologia.
-                </p>
+<p>
+Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de
+programação e curiosidades da área de tecnologia.
+</p>
 
-                <button>❤️ <span>0</span></button>
-                <button>👍 <span>0</span></button>
-            </div>
-        </article>
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
+</div>
+</article>
 
-        <article>
-            <img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
+<article>
+<img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
 
-            <div>
-                <h2>Meu segundo post</h2>
+<div>
+<h2>Meu segundo post</h2>
 
-                <p class="artigo-autor">
-                    Por: Luiz Henrique Schastai
-                </p>
+<p class="artigo-autor">
+Por: Luiz Henrique Schastai
+</p>
 
-                <p>
-                    Neste post vou compartilhar mais conteúdos sobre HTML, CSS
-                    e JavaScript para quem está começando na programação.
-                </p>
+<p>
+Neste post vou compartilhar mais conteúdos sobre HTML, CSS
+e JavaScript para quem está começando na programação.
+</p>
 
-                <button>❤️ <span>0</span></button>
-                <button>👍 <span>0</span></button>
-            </div>
-        </article>
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
+</div>
+</article>
 
-    </main>
+</main>
 
-    <script>
-        const botoes = document.querySelectorAll("button");
+<script>
+const botoes = document.querySelectorAll("button");
 
-        botoes.forEach(function (botao) {
-            let curtiu = false;
+botoes.forEach(function (botao) {
+let curtiu = false;
 
-            botao.addEventListener("click", botaoClicado);
+botao.addEventListener("click", botaoClicado);
 
-            function botaoClicado() {
-                let texto = botao.querySelector("span");
+function botaoClicado() {
+let texto = botao.querySelector("span");
 
-                if (curtiu === false) {
-                    texto.textContent++;
-                    curtiu = true;
-                } else {
-                    texto.textContent--;
-                    curtiu = false;
-                }
-            }
-        });
-    </script>
+if (curtiu === false) {
+texto.textContent++;
+curtiu = true;
+} else {
+texto.textContent--;
+curtiu = false;
+}
+}
+});
+</script>
 </body>
 </html>
