@@ -8,7 +8,6 @@ header {
     text-align: center;
     margin: 0 auto;
     padding: 16px;
-    display: flex;
 }
 
 .artigo-autor {
@@ -20,6 +19,8 @@ main {
     color: #000000;
     margin: 0 auto;
     padding: 16px;
+
+    display: flex;
 }
 
 article {
