@@ -25,6 +25,7 @@ main {
 
 article {
     display: flex;
+    margin: 16px;
     gap: 16px;
     padding: 16px;
     border: 1px solid #000643;
