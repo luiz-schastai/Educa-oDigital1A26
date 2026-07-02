@@ -10,9 +10,9 @@
 body.tema-escuro {
     --cor-primaria: #82c7ff;
     --cor-secundaria: #66dbff;
-    --cor-fundo: #08003f;
+    --cor-fundo: #060031;
     --cor-texto: #ffffff;
-    --cor-contraste: #001789;
+    --cor-contraste: #4b64e4;
     --cor-botao: #000000;
 }
 
