@@ -1,72 +1,75 @@
 :root {
-    --cor-primaria: #393939;
-    --cor-secundaria: #686868;
-    --cor-fundo: #fcfff1;
-    --cor-texto: #000000;
-    --cor-contraste: #d6d6d6;
-    --cor-botao: #e1e1e1;
+  --cor-primaria: #393939;
+  --cor-secundaria: #686868;
+  --cor-fundo: #fcfff1;
+  --cor-texto: #000000;
+  --cor-contraste: #d6d6d6;
+  --cor-botao: #e1e1e1;
 }
 
-.tema-escuro {
-    --cor-primaria: #5d5d5d;
-    --cor-secundaria: #222222;
-    --cor-fundo: #000000;
-    --cor-texto: #ffffff;
-    --cor-contraste: #d6d6d6;
-    --cor-botao: #ff0000;
+body.tema-escuro {
+  --cor-primaria: #5d5d5d;
+  --cor-secundaria: #222222;
+  --cor-fundo: #000000;
+  --cor-texto: #ffffff;
+  --cor-contraste: #d6d6d6;
+  --cor-botao: #ff0000;
 }
 
 body {
-    max-width: 100vw;
+  max-width: 100vw;
+  margin: 0;
 }
 
 header {
-    background-color: var(--cor-primaria);
-    /* Adicionado ; */
-    color: var(--cor-contraste);
-    /* Adicionado ; */
-    text-align: center;
-    margin: 0 auto;
-    padding: 16px;
-}
-
-.artigo-autor {
-    font-weight: bold;
+  background-color: var(--cor-primaria);
+  color: var(--cor-contraste);
+  text-align: center;
+  margin: 0 auto;
+  padding: 16px;
 }
 
 main {
-    background-color: var(--cor-fundo);
-    /* Adicionado ; */
-    color: var(--cor-texto);
-    /* Adicionado ; */
-    margin: 0 auto;
-    padding: 16px;
-    display: flex;
-    flex-wrap: wrap;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 article {
-    display: flex;
-    margin: 16px;
-    gap: 16px;
-    padding: 16px;
-    border: 1px solid var(--cor-secundaria);
-    /* Adicionado ; */
-    flex: 1 1 25%;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  margin: 16px;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--cor-secundaria);
+  flex: 1 1 25%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+button {
+  background-color: var(--cor-botao);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-secundaria);
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.autor {
+  font-weight: bold;
 }
 
 main img {
-    width: 80px;
-    height: 80px;
-    display: block;
+  width: 80px;
+  height: 80px;
+  display: block;
 }
 
-h2,
-p,
-button {
-    margin-bottom: 12px;
+h2, p {
+  margin-bottom: 12px;
 }
