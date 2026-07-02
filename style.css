@@ -17,7 +17,7 @@ body.tema-escuro {
 }
 
 .tema-escuro a {
-    color: var(--cor-secundaria)
+    color: var(--cor-contraste)
 }
 
 body {
