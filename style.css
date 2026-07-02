@@ -5,6 +5,8 @@
     --cor-texto: #000000;
     --cor-contraste: #d6d6d6;
     --cor-botao: #e1e1e1;
+
+    --fonte-texto:
 }
 
 body.tema-escuro {
@@ -31,6 +33,7 @@ body.tema-escuro {
 body {
     max-width: 100vw;
     margin: 0;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 header {
