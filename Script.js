@@ -1,33 +1,23 @@
-const botoes = document.querySelectorAll("button");
+const botoes = document.querySelectorAll("article button");
 
 botoes.forEach(function (botao) {
     let curtiu = false;
 
-    botao.addEventListener("click", botaoClicado);
+    botao.addEventListener("click", function () {
+        const contador = botao.querySelector("span");
 
-    function botaoClicado() {
-        let texto = botao.querySelector("span");
-
-        if (curtiu === false) {
-            texto.textContent++;
-            curtiu = true;
+        if (curtiu) {
+            contador.textContent--;
         } else {
-            texto.textContent--;
-            curtiu = false;
+            contador.textContent++;
         }
-    }
+
+        curtiu = !curtiu;
+    });
 });
 
 const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
 
- btnTemaEscuro.addEventListener("click", mudaTema);
-
-function mudaTema() {
-    const corpoPagina = document.body;
-
-    if (corpoPagina.classList.contains("tema-escuro")) {
-        corpoPagina.classList.remove("tema-escuro");
-    } else {
-        corpoPagina.classList.add("tema-escuro");
-    }
-}
+btnTemaEscuro.addEventListener("click", function () {
+    document.body.classList.toggle("tema-escuro");
+});
