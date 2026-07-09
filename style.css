@@ -2,7 +2,7 @@
     --cor-primaria: #000d6c;
     --cor-secundaria: #0053c0;
     --cor-fundo: #fcfff1;
-    --cor-texto: #000;
+    --cor-texto: #000000;
     --cor-contraste: #d6d6d6;
     --cor-botao: #e1e1e1;
 
@@ -13,60 +13,79 @@ body.tema-escuro {
     --cor-primaria: #82c7ff;
     --cor-secundaria: #66dbff;
     --cor-fundo: #060031;
-    --cor-texto: #fff;
+    --cor-texto: #ffffff;
     --cor-contraste: #4b64e4;
-    --cor-botao: #000;
+    --cor-botao: #000000;
+}
+
+.tema-escuro a {
+    color: var(--cor-contraste)
+}
+
+.tema-escuro p {
+    color: var(--cor-texto)
+}
+
+.tema-escuro header p {
+    color: var(--cor-contraste)
 }
 
 body {
+    max-width: 100vw;
     margin: 0;
-    font-family: var(--fonte-texto);
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
+    font-family: var(--fonte-texto)
 }
 
 header {
-    background: var(--cor-primaria);
+    background-color: var(--cor-primaria);
     color: var(--cor-contraste);
     text-align: center;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 16px;
 }
 
 main {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0 auto;
+    padding: 16px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    background: var(--cor-fundo);
 }
 
 article {
+    display: flex;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
     border: 1px solid var(--cor-secundaria);
-    padding: 15px;
-    width: 300px;
+    flex: 1 1 25%;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-}
-
-img {
-    width: 100px;
-    height: 100px;
+    justify-content: center;
 }
 
 button {
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
-    background: var(--cor-botao);
+    background-color: var(--cor-botao);
     color: var(--cor-texto);
     border: 1px solid var(--cor-secundaria);
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 12px;
 }
 
-.btn-tema-escuro {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
+.autor {
+    font-weight: bold;
+}
+
+main img {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+h2,
+p {
+    margin-bottom: 12px;
 }
