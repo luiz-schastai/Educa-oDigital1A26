@@ -92,12 +92,12 @@ p {
 
 .btn-tema-escuro {
     position: fixed;
-    bottom: 16px; /* Distância da borda de baixo */
-    right: 16px;  /* Distância da borda da direita */
-    font-size: 32px; /* Tamanho do emoji */
-    padding: 12px;   /* Espaço interno entre o emoji e a borda */
-    background-color: var(--cor-primaria); /* Cor de fundo usando nossa variável */
-    border-radius: 50%; /* Deixa o botão perfeitamente redondo */
-    border: none; /* Remove a borda padrão do botão */
-    cursor: pointer; /* Muda o mouse para a "mãozinha" ao passar por cima */
+    bottom: 16px; 
+    right: 16px;  
+    font-size: 32px; 
+    padding: 12px;   
+    background-color: var(--cor-primaria); 
+    border-radius: 50%; 
+    border: none; 
+    cursor: pointer; 
 }
