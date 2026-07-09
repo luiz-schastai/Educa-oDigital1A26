@@ -89,3 +89,15 @@ h2,
 p {
     margin-bottom: 12px;
 }
+
+.btn-tema-escuro {
+    position: fixed;
+    bottom: 16px; 
+    right: 16px;  
+    font-size: 32px; 
+    padding: 12px;   
+    background-color: var(--cor-primaria); 
+    border-radius: 50%; 
+    border: none; 
+    cursor: pointer; 
+}
